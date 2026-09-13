@@ -1,0 +1,13 @@
+[Unit]
+Description=Ethan Alexander portfolio server
+After=network.target
+
+[Service]
+User=ubuntu
+ExecStart=/home/ubuntu/net/ethanjalexander/ethanjalexander-server
+WorkingDirectory=/home/ubuntu/net/ethanjalexander
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target
